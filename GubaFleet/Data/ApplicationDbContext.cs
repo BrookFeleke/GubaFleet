@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using GubaFleet.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace GubaFleet.Data
 {
@@ -9,5 +10,12 @@ namespace GubaFleet.Data
 
 
         }
+        public DbSet<Booking> Bookings { get; set; }
+        public DbSet<Vehicle> Vehicles { get; set; }
+        public DbSet<Expense> Expenses { get; set; }
+        public DbSet<Driver> Drivers { get; set; }
+        public DbSet<Income> Incomes { get; set; }
+        public DbSet<SparePart> SpareParts { get; set; }
+        public DbSet<Group> Groups { get; set; }    
     }
 }
